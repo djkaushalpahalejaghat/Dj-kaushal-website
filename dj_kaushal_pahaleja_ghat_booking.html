@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#08090c">
+<meta name="description" content="DJ KAUSHAL PAHALEJA GHAT presents DJ booking. Apne event ke liye DJ booking request bhejein.">
+<title>DJ KAUSHAL PAHALEJA GHAT | DJ Booking</title>
+<style>
+:root{--bg:#08090c;--panel:#111319;--silver:#e6e8ee;--muted:#a5aab6;--line:#3a3d47;--accent:#c6cad4;--white:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 80% 0%,#242630 0%,transparent 38%),var(--bg);color:var(--silver);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#08090cdd;backdrop-filter:blur(14px);border-bottom:1px solid #ffffff18}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+.brand{font-weight:900;letter-spacing:2px;font-size:1.1rem}.brand span{color:#9fa5b2}
+.navlinks{display:flex;align-items:center;gap:20px;color:#d1d3da;font-size:.92rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border:1px solid #aeb3c0;border-radius:12px;color:white;background:transparent;font-weight:750;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s;box-shadow:inset 0 0 0 1px #ffffff08;min-height:46px}
+.btn:hover{background:#ffffff13;box-shadow:0 0 22px #c8cedb25;transform:translateY(-2px)}
+.btn:active{transform:scale(.96)}
+.btn.primary{background:linear-gradient(135deg,#f5f6f8,#aeb4c1);color:#08090c;border-color:#f5f6f8}
+.hero{padding:76px 0 56px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:42px;min-height:580px}
+.eyebrow{display:inline-flex;gap:9px;align-items:center;border:1px solid #777d8b;border-radius:999px;padding:6px 12px;font-size:.77rem;letter-spacing:1.6px;color:#d6d8df}
+.dot{width:7px;height:7px;border-radius:50%;background:#e5e7eb;box-shadow:0 0 12px #fff}
+h1{font-size:clamp(2.6rem,7vw,5.3rem);line-height:.98;letter-spacing:-3px;margin:22px 0}
+h1 span{display:block;color:#9da3b1}
+.lead{font-size:1.08rem;color:#b8bdc8;max-width:560px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.hero-art{position:relative;min-height:380px;border:1px solid #777d8b66;border-radius:28px;overflow:hidden;background:radial-gradient(circle at 50% 40%,#424754 0%,#191b23 36%,#0b0c10 72%);display:grid;place-items:center}
+.hero-art:before,.hero-art:after{content:"";position:absolute;border:1px solid #b9bfce30;border-radius:50%;width:280px;height:280px;animation:spin 22s linear infinite}
+.hero-art:after{width:360px;height:360px;animation-direction:reverse}
+.disc{width:min(62%,260px);aspect-ratio:1;border-radius:50%;background:repeating-radial-gradient(circle,#17191f 0 5px,#313540 6px 8px,#101116 9px 13px);border:5px solid #aeb4c1;box-shadow:0 0 45px #b8c0d022;display:grid;place-items:center;position:relative;z-index:1}
+.disc:before{content:"";width:27%;aspect-ratio:1;border-radius:50%;background:linear-gradient(135deg,#f0f1f5,#747b89);border:7px solid #17191f}
+.disc:after{content:"LIMIT";position:absolute;top:29%;font-weight:900;letter-spacing:3px;color:#e7e9ee;font-size:clamp(.7rem,2vw,1rem)}
+.art-label{position:absolute;bottom:22px;left:22px;right:22px;display:flex;justify-content:space-between;font-size:.72rem;letter-spacing:2px;color:#c6cad4;z-index:2}
+section{padding:58px 0}
+.section-top{margin-bottom:28px}.kicker{color:#aeb4c1;font-size:.78rem;letter-spacing:2px;font-weight:800}
+h2{font-size:clamp(1.8rem,4vw,2.8rem);letter-spacing:-1px;line-height:1.1;margin:8px 0 10px}
+.sub{color:var(--muted);max-width:680px;margin:0}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.feature{border:1px solid #ffffff20;background:linear-gradient(145deg,#171920,#0d0e12);padding:23px;border-radius:18px}
+.feature .ico{font-size:1.6rem}.feature h3{margin:10px 0 6px}.feature p{margin:0;color:var(--muted);font-size:.94rem}
+.booking-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:22px;align-items:start}
+.booking-info,.form-card{border:1px solid #ffffff24;background:#101116;border-radius:22px;padding:26px}
+.booking-info{background:linear-gradient(150deg,#1c1f28,#0d0e12)}
+.info-line{padding:14px 0;border-bottom:1px solid #ffffff18}.info-line:last-child{border:0}
+.info-line small{display:block;color:var(--muted);letter-spacing:1px;font-size:.72rem}
+form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}
+label{font-size:.86rem;color:#d5d8e0;font-weight:650}
+input,select,textarea{width:100%;background:#090a0e;color:#f3f4f6;border:1px solid #414550;border-radius:11px;padding:13px;font:inherit;outline:none;min-height:48px}
+textarea{resize:vertical;min-height:90px}
+input:focus,select:focus,textarea:focus{border-color:#d5d9e2;box-shadow:0 0 0 3px #c8cedb1a}
+select option{background:#101116}
+.notice{color:#aeb4c1;font-size:.82rem;margin:12px 0 0}
+.status{display:none;margin-top:14px;border:1px solid #687080;padding:12px;border-radius:10px;color:#e7e9ef;overflow-wrap:anywhere}
+footer{border-top:1px solid #ffffff1b;padding:24px 0;color:#a7acb7;font-size:.86rem}
+.footer-row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.reveal{animation:rise .7s both}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:760px){.navlinks{gap:10px}.navlinks a:not(.btn){display:none}.hero{grid-template-columns:1fr;padding:54px 0 30px;gap:25px;min-height:0}.hero-art{min-height:300px}.features{grid-template-columns:1fr}.booking-grid{grid-template-columns:1fr}section{padding:42px 0}h1{letter-spacing:-2px}.form-card,.booking-info{padding:19px}}
+@media(max-width:420px){.brand{font-size:.95rem;letter-spacing:1px}.nav .btn{padding:9px 11px;font-size:.8rem}.hero-art{min-height:260px}form{grid-template-columns:1fr}.field.full{grid-column:auto}.actions .btn{width:100%}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="DJ KAUSHAL PAHALEJA GHAT Home">DJ <span>KAUSHAL</span></a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="#services">Features</a><a href="#booking">Booking</a>
+      <a class="btn" href="#booking">Book DJ ↗</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="wrap hero" id="home">
+    <div class="reveal">
+      <div class="eyebrow"><span class="dot"></span> SOUND • LIGHTS • CELEBRATION</div>
+      <h1>MAKE YOUR<br><span>EVENT LOUD.</span></h1>
+      <p class="lead">Shaadi, birthday, visarjan ya kisi bhi special event ke liye DJ booking request bhejein. Apni event details bharein aur WhatsApp par request share karein.</p>
+      <div class="actions">
+        <a class="btn primary" href="#booking">Book Your Event ↗</a>
+        <a class="btn" href="#services">Explore Details ↓</a>
+      </div>
+    </div>
+    <div class="hero-art" aria-label="Stylized DJ vinyl artwork">
+      <div class="disc"></div>
+      <div class="art-label"><span>DJ KAUSHAL PAHALEJA GHAT</span><span>DJ BOOKING / INDIA</span></div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="section-top"><div class="kicker">WHAT WE DO</div><h2>Har event ka apna vibe.</h2><p class="sub">Apne event ki details bhejein. Booking aur final charges ki pushti team se baat hone ke baad hogi.</p></div>
+      <div class="features">
+        <article class="feature"><div class="ico">🎧</div><h3>DJ & Sound</h3><p>Apne function ke liye DJ booking request bhejein aur apni zaroorat batayein.</p></article>
+        <article class="feature"><div class="ico">💡</div><h3>Lights & Celebration</h3><p>Event type aur location share karein taaki requirements par baat ho sake.</p></article>
+        <article class="feature"><div class="ico">📍</div><h3>Local Events</h3><p>Gaon, city aur district ki details daalein, taaki event location clear rahe.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking">
+    <div class="wrap">
+      <div class="section-top"><div class="kicker">BOOKING REQUEST</div><h2>Apni booking shuru karein.</h2><p class="sub">Form bharein. Button dabane par WhatsApp khulega aur aapki details message mein aa jayengi.</p></div>
+      <div class="booking-grid">
+        <aside class="booking-info">
+          <div class="kicker">DJ KAUSHAL PAHALEJA GHAT / DJ DESK</div>
+          <h2>Let's plan your event.</h2>
+          <p class="sub">Details sahi bharein. WhatsApp par message bhejna aapko khud confirm karna hoga.</p>
+          <div class="info-line"><small>EVENTS</small>Shaadi • Birthday • Visarjan • Other</div>
+          <div class="info-line"><small>BOOKING METHOD</small>WhatsApp message</div>
+          <div class="info-line"><small>BOOKING STATUS</small>Request only — confirmation pending</div>
+        </aside>
+        <div class="form-card">
+          <form id="bookingForm">
+            <div class="field"><label for="customer">Aapka naam *</label><input id="customer" name="customer" placeholder="Jaise Rahul Kumar" required maxlength="70"></div>
+            <div class="field"><label for="phone">Mobile number *</label><input id="phone" name="phone" inputmode="tel" placeholder="10 digit number" pattern="[6-9][0-9]{9}" required maxlength="10"></div>
+            <div class="field"><label for="district">District *</label><input id="district" name="district" placeholder="Jaise Saran" required maxlength="70"></div>
+            <div class="field"><label for="village">Gaon / City *</label><input id="village" name="village" placeholder="Gaon ya city ka naam" required maxlength="90"></div>
+            <div class="field"><label for="event">Event type *</label><select id="event" name="event" required><option value="">Select karein</option><option>Shaadi / Wedding</option><option>Birthday</option><option>Ganesh Visarjan</option><option>Durga Puja</option><option>Chhath Puja</option><option>Road Show</option><option>Private Party</option><option>Other</option></select></div>
+            <div class="field"><label for="date">Event date *</label><input id="date" name="date" type="date" required></div>
+            <div class="field full"><label for="details">Extra details (optional)</label><textarea id="details" name="details" placeholder="Timing, location, sound/light requirements..."></textarea></div>
+            <div class="field full"><button class="btn primary" type="submit">WhatsApp par Booking Bhejein ↗</button><p class="notice">Privacy: form ki details is page par kisi server mein save nahi hoti. WhatsApp kholne ke baad message bhejne se pehle check kar lein.</p><div class="status" id="status" role="status"></div></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap footer-row"><span>© <span id="year"></span> DJ KAUSHAL PAHALEJA GHAT. All rights reserved.</span><span>Made for mobile • Black & Silver Edition</span></div></footer>
+<script>
+/*
+  SETUP: Replace 91XXXXXXXXXX with your WhatsApp number.
+  Use country code 91 + 10-digit number, digits only. No + or spaces.
+*/
+const WHATSAPP_NUMBER = "91XXXXXXXXXX";
+document.getElementById("year").textContent = new Date().getFullYear();
+const dateInput = document.getElementById("date");
+const today = new Date();
+const localToday = new Date(today.getTime()-today.getTimezoneOffset()*60000).toISOString().slice(0,10);
+dateInput.min = localToday;
+document.getElementById("bookingForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  if(!this.reportValidity()) return;
+  const d = new FormData(this);
+  const message = [
+    "🎧 *DJ KAUSHAL PAHALEJA GHAT - DJ BOOKING REQUEST*",
+    "",
+    "*Naam:* " + d.get("customer"),
+    "*Mobile:* " + d.get("phone"),
+    "*District:* " + d.get("district"),
+    "*Gaon/City:* " + d.get("village"),
+    "*Event:* " + d.get("event"),
+    "*Event Date:* " + d.get("date"),
+    "*Extra Details:* " + (d.get("details") || "Not provided"),
+    "",
+    "Kripya booking availability aur charges confirm karein."
+  ].join("\n");
+  const status = document.getElementById("status");
+  if(!/^91[6-9][0-9]{9}$/.test(WHATSAPP_NUMBER)){
+    status.style.display = "block";
+    status.textContent = "Setup baaki hai: code mein WHATSAPP_NUMBER ko apne WhatsApp number se replace karein (91 + 10 digits, bina + ya spaces). Phir dobara try karein.";
+    return;
+  }
+  const url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
+  status.style.display = "block";
+  status.textContent = "WhatsApp khul raha hai. Wahan details check karke Send dabayein.";
+  window.open(url, "_blank", "noopener,noreferrer");
+});
+</script>
+</body>
+</html>
